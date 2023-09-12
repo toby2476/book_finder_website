@@ -24,7 +24,7 @@ async function GetBooks() {
         }
 
         const newTitle = document.createElement("h3");
-        newTitle.class = "article_title";
+        newTitle.classList.add("book_title");
         newTitle.innerHTML = json.items[i].volumeInfo.title;
         newBook.appendChild(newTitle);
 
